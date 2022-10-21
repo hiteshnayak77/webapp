@@ -3,12 +3,12 @@ pipeline {
     stages{
         stage('compile stage') {
             steps {
-                echo 'hello'
+                sh 'mvn install'
             }
         }
         stage('package stage'){
             steps {
-                echo "bye"
+                echo "hello"
             }
         }
         stage('install stage'){
